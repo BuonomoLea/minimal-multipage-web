@@ -1,9 +1,14 @@
 # minimal-multipage-web
 A minimalist multi-page website project
 
+<img width="1878" height="895" alt="Capture d'écran 2025-07-18 220344" src="https://github.com/user-attachments/assets/5cd443e9-867f-4e89-bda0-3c36eea9a972" />
+
+
 ## Project Purpose
 
 This repository contains a static website with a sidebar navigation, designed for easy maintenance and accessibility. It is built with HTML, CSS, and JavaScript, and organized into clear sections for Discover, News, Settings, About, Contact, and Legals.
+
+<img width="1876" height="884" alt="Capture d'écran 2025-07-18 220413" src="https://github.com/user-attachments/assets/20d5ea96-6087-48a1-b1b8-ea08c92a2164" />
 
 ## How to Use
 
@@ -31,18 +36,7 @@ This repository contains a static website with a sidebar navigation, designed fo
 - Use consistent class and folder naming (French/English mix).
 - Keep ARIA roles and labels up to date if you change the structure.
 
-## Developer Tips
-
-- Use browser DevTools for debugging and inspecting layout.
-- Console logs in `script.js` are visible in the browser console.
-
-## Example: Adding a Sidebar Link
-
-```html
-<li>
-  <a href="Settings/index.html">Settings</a>
-</li>
-```
+<img width="1884" height="896" alt="Capture d'écran 2025-07-18 220321" src="https://github.com/user-attachments/assets/69ce507c-c0db-46aa-ba5a-57ec907cf8f9" />
 
 ## License
 
