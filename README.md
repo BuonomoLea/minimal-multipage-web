@@ -8,7 +8,6 @@ A minimalist multi-page website project
 
 This repository contains a static website with a sidebar navigation, designed for easy maintenance and accessibility. It is built with HTML, CSS, and JavaScript, and organized into clear sections for Discover, News, Settings, About, Contact, and Legals.
 
-<img width="1876" height="884" alt="Capture d'écran 2025-07-18 220413" src="https://github.com/user-attachments/assets/20d5ea96-6087-48a1-b1b8-ea08c92a2164" />
 
 ## How to Use
 
@@ -36,13 +35,14 @@ This repository contains a static website with a sidebar navigation, designed fo
 - Use consistent class and folder naming (French/English mix).
 - Keep ARIA roles and labels up to date if you change the structure.
 
-<img width="1884" height="896" alt="Capture d'écran 2025-07-18 220321" src="https://github.com/user-attachments/assets/69ce507c-c0db-46aa-ba5a-57ec907cf8f9" />
 
 ## License
 
 This project is provided as-is for educational and demonstration purposes.
 
----
+<img width="1876" height="884" alt="Capture d'écran 2025-07-18 220413" src="https://github.com/user-attachments/assets/20d5ea96-6087-48a1-b1b8-ea08c92a2164" />
+
+<img width="1884" height="896" alt="Capture d'écran 2025-07-18 220321" src="https://github.com/user-attachments/assets/69ce507c-c0db-46aa-ba5a-57ec907cf8f9" />
 
 # README minimal-multipage-web (Français)
 
@@ -81,13 +81,6 @@ Ce dépôt contient un site web statique avec une navigation latérale, conçu p
 - Utilisez les outils de développement du navigateur pour le débogage et l'inspection de la mise en page.
 - Les logs dans `script.js` sont visibles dans la console du navigateur.
 
-## Exemple : Ajouter un lien dans le menu latéral
-
-```html
-<li>
-  <a href="Settings/index.html">Paramètres</a>
-</li>
-```
 
 ## Licence
 
