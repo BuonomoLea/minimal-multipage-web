@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Genos", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 350px;
+    background: #fff;
+    z-index: 9999;
+    height: 100vh;
+    transition: 0.3s;
+    transform: translateX(100%);
+}
+
+.span-croix {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    padding-top: 15px;
+}
+ul {
+    padding: 20px;
+    padding-top: 60px;
+    list-style-type: none;
+}
+ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+ul li:hover {
+    background-color: #f2f2f2a9;
+}
+li a {
+    font-size: 20px;
+    transition: 0.3s;
+    color: #333333;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform .2s ease-out;
+}
+li a:hover {
+    transform: scale(1.1);
+    color: #1b1b1b;
+}
+span, a {
+    display: inline-block;
+}
+.overlay.show {
+    opacity: 0.5;
+    visibility: visible;
+}
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    cursor: pointer;
+}
+.main {
+    background: #000;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.petit-container {
+    display: inline-block;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 80%;
+    height: 70%;
+    line-height: 3;
+}
+.titre {
+    padding-top: 2rem;
+    font-size: 4.5rem;
+    color:#fff;
+    animation: swingInBottom 1s ease;
+}
+@keyframes swingInBottom {
+    0% {
+      transform: rotateX(100deg);
+      transform-origin: bottom;
+      opacity: 0;
+    }
+    50% {
+        transform: rotateX(100deg);
+        transform-origin: bottom;
+        opacity: 0;
+    }
+    100% {
+      transform: rotateX(0);
+      transform-origin: bottom;
+      opacity: 1;
+    }
+  }
+
+  .barre1-titre2 {
+    width: 20rem;
+    height: 1px;
+    content: '';
+    position: absolute;
+    top: 54.2%;
+    left: 5%; 
+    background: #fff;
+    animation: FadeInLeft .8s ease .8s 1 normal both;
+}
+@keyframes FadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.barre2-titre2 {
+    width: 20rem;
+    height: 1px;
+    content: '';
+    position: absolute;
+    top: 54.2%;
+    right: 5%;
+    background: #fff;
+    animation: FadeInRight .8s ease .8s 1 normal both;
+}
+@keyframes FadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.titre2 {
+    font-size: 1.8rem;
+    color:#fff;
+    text-transform: uppercase;
+    animation: slideInUp .5s ease 1.1s 1 normal both;
+}
+@keyframes slideInUp {
+    0% {
+    transform: translateY(-70%);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    }
+  }
+
+.texte {
+    margin-top: 8rem;
+    margin-left: 12rem;
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1.4;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color:#fff;
+    border-right: 1px solid;
+    animation: typing 1.6s steps(220), cursor step-end .2s infinite alternate;
+    animation-delay: 2.2s;
+    animation-fill-mode: both;
+}
+@keyframes cursor {
+    0% { 
+        border-color: transparent;
+    }
+    50% { 
+        border-color: white;
+    }
+    100% { 
+        border-color: transparent;
+    }
+}
+@keyframes typing{ 
+    from { 
+        width: 0px;
+    }
+    to {
+        width: 44.5rem;
+    }
+} 
+
+.btn-toggle {
+    position: absolute;
+    top: 19px;
+    right: 16px;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 32px;
+    text-transform: none;
+    z-index: 60;
+    cursor: pointer;
+}

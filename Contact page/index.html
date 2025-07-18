@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <!-- Siderbar -->
+    <div id="menu" class="menu">
+        <span id="croix" class="span-croix">
+            <svg class="svgCroix" xmlns="http://www.w3.org/2000/svg" height="30" width="27" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </span>
+        <ul>
+            <li class="li-menu">
+                <a href="../index.html">HOME</a>
+            </li>
+            <li class="li-menu">
+                <a href="../Discover ou product/index.html">Discover</a>
+            </li class="li-menu">
+            <li class="li-menu">
+                <a href="../News/index.html">News</a>
+            </li>
+            <li class="li-menu">
+                <a href="../Settings/index.html">Settings</a>
+            </li>
+            <li class="li-menu">
+                <a href="../About ou article/index.html">About</a>
+            </li>
+            <li class="li-menu"> 
+                <a href="../Contact page/index.html">Contact</a>
+            </li>
+            <li class="li-menu">
+                <a href="../Legals page/index.html">Legals</a>
+            </li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="section">
+            <header class="header">
+                <h2 class="titre">Contact</h2>
+            </header>
+            <div class="main">
+                <form class="form" action="get">
+                    <label class="label1" for="name">name</label>
+                    <input class="bouton marge" id="name" name="name" type="text" autocomplete="name">
+                    <label class="label2" for="email">email</label>
+                    <input class="bouton marge" id="email" name="email" type="email" autocomplete="email">
+                    <textarea class="bouton-mess marge" name="mess" id="mess" cols="30" rows="10" placeholder="Enter your text"></textarea>
+                    <input class="bouton-submit marge" type="submit">
+                </form>
+            </div>
+            <footer class="footer">
+                <div class="footer-left">
+                    <ul class="position-img">
+                        <li class="li2">
+                            <a class="li2-a" href="#"><img class="img-liens" src="/img/profile-picture.webp" alt="img"></a>
+                        </li>
+                        <li class="li2">
+                            <a class="li2-a" href="#"><img class="img-liens" src="/img/profile-picture.webp" alt="img"></a>
+                        </li>
+                        <li class="li2">
+                            <a class="li2-a" href="#"><img class="img-liens" src="/img/profile-picture.webp" alt="img"></a>
+                        </li>
+                        <li class="li2">
+                            <a class="li2-a" href="#"><img class="img-liens" src="/img/profile-picture.webp" alt="img"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <ul class="position-img">
+                        <li class="li2">
+                            <a class="li2-a" href="#"><img class="img-liens" src="/img/profile-picture.webp" alt="img"></a>
+                        </li>
+                        <li class="li2">
+                            <a class="li2-a" href="#"><img class="img-liens" src="/img/profile-picture.webp" alt="img"></a>
+                        </li>
+                        <li class="li2">
+                            <a class="li2-a" href="#"><img class="img-liens" src="/img/profile-picture.webp" alt="img"></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <button title="menu" id="btnToggle" class="btn-toggle" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="35" width="35" viewBox="0 0 512 512"><path fill="#fff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>
+</body>
+</html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Genos", sans-serif;
+}
+/* MENU */
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 350px;
+    background: #fff;
+    z-index: 9999;
+    height: 100vh;
+    transition: 0.3s;
+    transform: translateX(100%);
+}
+
+.span-croix {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    padding-top: 15px;
+}
+.svgCroix {
+    width: 27px;
+    height: 30px;
+}
+ul {
+    padding: 20px;
+    padding-top: 60px;
+    list-style-type: none;
+}
+ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+ul li:hover {
+    background-color: #f2f2f2a9;
+}
+li a {
+    font-size: 20px;
+    transition: 0.3s;
+    color: #333333;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform .2s ease-out;
+}
+li a:hover {
+    transform: scale(1.1);
+    color: #1b1b1b;
+}
+span, a {
+    display: inline-block;
+}
+.overlay.show {
+    opacity: 0.5;
+    visibility: visible;
+}
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    cursor: pointer;
+}
+.btn-toggle {
+    width: 35px;
+    height: 35px; 
+    position: absolute;
+    top: 19px;
+    right: 16px;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 32px;
+    text-transform: none;
+    z-index: 60;
+    cursor: pointer;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid:
+      "container-img main" 100%
+      / 50% 50%;
+  }
+  
+  .container-img { grid-area: container-img; }
+    .img {
+        width: 100%;
+        height: 100vh;
+    }
+  .main { 
+    width: 100%;
+    height: 100%;
+    grid-area: main;
+}
+    .article {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid:
+        "header" 20%
+        "section-titre" 20%
+        "presentation" 15%
+        "section-paragraphe" 45%
+        / 1fr;
+        
+    }
+
+    .div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .div-header {
+        width: 100%;
+        height: 100%;
+        grid-area: header;
+    }
+        .header {
+            text-transform: uppercase;
+            text-align: center;
+            align-items: end;
+        }
+
+    .div-section-titre {
+        width: 100%;
+        height: 100%;
+        grid-area: section-titre;
+    }
+        .section-titre {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            align-items: start;
+            text-transform: uppercase;
+            font-size: 8rem;
+            margin-bottom: 5rem;
+        }
+
+    .div-presentation {
+        width: 100%;
+        height: 100%;
+        grid-area: presentation;
+    }
+        .presentation {
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            padding-top: 4rem;
+            padding-right: 6.5rem;
+            padding-bottom: 4rem;
+            padding-left: 5rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+    .div-section-paragraphe {
+        width: 100%;
+        height: 100%;
+        grid-area: section-paragraphe;
+    }
+        .section-paragraphe {
+            width: 100%;
+            height: 100%;
+            text-align: right;
+            align-items: start;
+            font-weight: 500;
+            padding-top: 3.5rem;
+            padding-right: 6rem;
+            padding-left: 6rem;
+            line-height: 1.3;
+        }
+        

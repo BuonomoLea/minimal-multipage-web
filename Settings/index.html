@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside id="menu" class="menu" aria-label="Settings sidebar" role="navigation">
+        <!-- Sidebar close button -->
+        <button id="croix" class="span-croix" aria-label="Close menu" tabindex="0" type="button">
+            <svg class="svgCroix" xmlns="http://www.w3.org/2000/svg" height="30" width="27" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><title>Close</title><desc>Cross icon to close sidebar</desc><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </button>
+        <ul aria-label="Sidebar navigation">
+            <li class="li-menu"><a href="../index.html">HOME</a></li>
+            <li class="li-menu"><a href="../Discover ou product/index.html">Discover</a></li>
+            <li class="li-menu"><a href="../News/index.html">News</a></li>
+            <li class="li-menu"><a href="../Settings/index.html">Settings</a></li>
+            <li class="li-menu"><a href="../About ou article/index.html">About</a></li>
+            <li class="li-menu"><a href="../Contact page/index.html">Contact</a></li>
+            <li class="li-menu"><a href="../Legals page/index.html">Legals</a></li>
+        </ul>
+    </aside>
+    <!-- Overlay for sidebar/modal effects -->
+    <div class="overlay" aria-hidden="true"></div>
+    <!-- Settings main section -->
+    <section class="container">
+        <div class="container-titre">
+            <div class="titre">
+                <h2 class="h2-titre" tabindex="0">SETTINGS</h2>
+            </div> 
+        </div>
+        <div class="main">
+            <!-- Left profile image -->
+            <div class="left">
+                <img class="imgLeft" src="/img/profile-picture.webp" alt="Profile picture">
+            </div>
+            <!-- Right settings controls -->
+            <div class="right">
+                <!-- Appearance toggle -->
+                <div class="div1">
+                    <h4 class="h4-titre">Appearance</h4>
+                    <div class="box">
+                        <input class="input-box" id="checkbox" type="checkbox" aria-label="Toggle appearance">
+                        <label class="label-box" for="checkbox"></label>
+                    </div>
+                </div>
+                <!-- Cookies toggle -->
+                <div class="div2">
+                    <h4 class="h4-titre">Cookies</h4>
+                    <div class="box2">
+                        <input class="input-box2" id="checkbox2" type="checkbox" aria-label="Toggle cookies">
+                        <label class="label-box2" for="checkbox2"></label>
+                    </div> 
+                </div>
+                <!-- Language selection -->
+                <div class="div3">
+                    <h4 class="h4-titre">Languages</h4>
+                    <select class="select" name="lang" id="lang" aria-label="Select language">
+                        <option class="options" value="fr">fr</option>
+                        <option class="options" value="en">en</option>
+                    </select>
+                </div>
+                <!-- Device/currency selection -->
+                <div class="div4">
+                    <h4 class="h4-titre">Devices</h4>
+                    <select class="select" name="device" id="device" aria-label="Select device/currency">
+                        <option class="options" value="euro">eur€</option>
+                        <option class="options" value="dollars">dol$</option>
+                    </select>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <!-- Sidebar open button -->
+    <button title="Open menu" id="btnToggle" class="btn-toggle" type="button" aria-label="Open sidebar" tabindex="0">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" width="35" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><title>Menu</title><desc>Hamburger icon to open sidebar</desc><path fill="#000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+    </button>
+</body>
+</html>
