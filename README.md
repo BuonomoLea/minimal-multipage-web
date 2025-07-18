@@ -20,7 +20,7 @@ This repository contains a static website with a sidebar navigation, designed fo
 - `index.html`: Main entry point, includes sidebar and main content.
 - `style.css`: All site styles.
 - `script.js`: Handles sidebar interactivity.
-- Section folders (e.g., `Discover ou product/`, `News/`, etc.): Each contains its own `index.html`, `style.css`, and assets.
+- Section folders (e.g., `Discover ou product/`, `News/`, etc.): Each contains its own `index.html` & `style.css`.
 
 ## Accessibility & SEO
 
@@ -61,7 +61,7 @@ Ce dépôt contient un site web statique avec une navigation latérale, conçu p
 - `index.html` : point d'entrée principal, inclut le menu latéral et le contenu principal.
 - `style.css` : toutes les règles de style du site.
 - `script.js` : gère l'interactivité du menu latéral.
-- Dossiers de section (ex : `Discover ou product/`, `News/`, etc.) : chacun contient son propre `index.html`, `style.css` et ses ressources.
+- Dossiers de section (ex : `Discover ou product/`, `News/`, etc.) : chacun contient son propre `index.html` et `style.css`.
 
 ## Accessibilité & SEO
 
