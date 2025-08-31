@@ -13,7 +13,7 @@ This repository contains a static website with a sidebar navigation, designed fo
 
 - Open `index.html` in your browser to view the main page.
 - The sidebar menu provides navigation to all major sections. Each section is a folder with its own `index.html`.
-- All changes to HTML, CSS, or JS are reflected immediately—no build step required.
+- All changes to HTML, CSS, or JS are reflected immediately no build step required.
 
 ## Structure
 
@@ -73,7 +73,7 @@ Ce dépôt contient un site web statique avec une navigation latérale, conçu p
 ## Conseils de maintenance
 
 - Pour ajouter une nouvelle section, créez un dossier avec un `index.html` et ajoutez un lien dans le menu latéral.
-- Utilisez une nomenclature cohérente pour les classes et les dossiers (mélange français/anglais).
+- Utilisez une nomenclature cohérente pour les classes et les dossiers.
 - Gardez les rôles et labels ARIA à jour si vous modifiez la structure.
 
 ## Conseils pour les développeurs
